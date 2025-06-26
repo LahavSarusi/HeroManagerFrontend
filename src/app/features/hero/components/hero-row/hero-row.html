@@ -1,0 +1,10 @@
+<div class="list-group-item d-flex justify-content-between align-items-center">
+  <div>
+    <strong>{{ hero.name }}</strong>
+    <span class="badge bg-secondary ms-2">{{ hero.suit_color }}</span>
+    <span *ngIf="hero.has_cape" class="ms-2"><i class="fas fa-wind"></i> Cape</span>
+  </div>
+  <div>
+    <small class="text-muted">Last mission: {{ hero.last_mission | date:'short' }}</small>
+  </div>
+</div>
